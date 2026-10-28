@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-12);
+  width: 100%;
+  min-height: 64px;
+  padding: var(--s-12) var(--s-20);
+  text-align: left;
+}
+.tappable { transition: background 120ms; }
+.tappable:active { background: var(--raised); }
+.text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.trail { display: flex; flex-direction: column; align-items: flex-end; flex-shrink: 0; }

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "card",
+    "name": "HDFC Millennia card",
+    "amount": 5482,
+    "due": "2026-10-28",
+    "account": "hdfc_card",
+    "category": "Bills"
+  },
+  {
+    "id": "rent",
+    "name": "Rent",
+    "amount": 16000,
+    "due": "2026-11-01",
+    "category": "Rent"
+  },
+  {
+    "id": "cultfit",
+    "name": "cult.fit",
+    "amount": 2099,
+    "due": "2026-11-01",
+    "category": "Bills"
+  },
+  {
+    "id": "airtel",
+    "name": "Airtel Postpaid",
+    "amount": 599,
+    "due": "2026-11-03",
+    "category": "Bills"
+  },
+  {
+    "id": "sip",
+    "name": "Groww SIP",
+    "amount": 5000,
+    "due": "2026-11-05",
+    "category": "Savings"
+  },
+  {
+    "id": "rahul",
+    "name": "Pay back Rahul",
+    "amount": 2000,
+    "due": "2026-11-05",
+    "category": "Transfer"
+  },
+  {
+    "id": "act",
+    "name": "ACT Fibernet",
+    "amount": 1049,
+    "due": "2026-11-07",
+    "category": "Bills"
+  },
+  {
+    "id": "bescom",
+    "name": "BESCOM",
+    "amount": 1240,
+    "due": "2026-11-10",
+    "category": "Bills"
+  }
+]

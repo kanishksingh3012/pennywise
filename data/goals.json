@@ -1,0 +1,24 @@
+[
+  {
+    "id": "goa",
+    "name": "Goa trip",
+    "saved": 18600,
+    "target": 30000,
+    "by": "2027-03-15",
+    "monthly": 2500
+  },
+  {
+    "id": "emergency",
+    "name": "Emergency fund",
+    "unit": "months",
+    "saved": 2.1,
+    "target": 3
+  },
+  {
+    "id": "rahul",
+    "name": "Pay back Rahul",
+    "amount": 2000,
+    "by": "2026-11-05",
+    "person": "rahul"
+  }
+]

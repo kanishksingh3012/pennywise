@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rahul",
+    "name": "Rahul Menon",
+    "vpa": "rahul.menon@okaxis",
+    "you_owe": 2000,
+    "by": "2026-11-05",
+    "note": "lent for the month"
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah D'Souza",
+    "vpa": "sarah.dsouza@oksbi",
+    "owes_you": 540,
+    "note": "movie ticket, 10 Oct"
+  },
+  {
+    "id": "priya",
+    "name": "Priya Nair",
+    "vpa": "priya.nair@ybl",
+    "note": "birthday dinner 16 Oct"
+  },
+  {
+    "id": "landlord",
+    "name": "Prakash Rao",
+    "vpa": "prakashrao@okhdfcbank",
+    "note": "landlord, rent on the 1st"
+  }
+]

@@ -1,0 +1,77 @@
+/* PennyWise design tokens (SPEC.md › Design tokens). Copper is the only highlight. */
+:root {
+  /* Colours */
+  --ground: #0e0d0c;
+  --surface: #181716;
+  --raised: #252321;
+  --rule: #2a2826;
+  --text: #f5f2ed;
+  --muted: #b5b0a8;
+  --faint: #95908a;
+  --copper: #e39a6b;
+  --copper-tint: #33231a;
+  --positive: #5cc48a;
+  --negative: #ef6f6c;
+  --warning: #e5a93b;
+  --chart-grey: #6b6661;
+
+  /* Categories: identity only, always paired with a label or number */
+  --cat-rent: #7d9bc9;
+  --cat-food: #d98ca6;
+  --cat-shopping: #a98bd9;
+  --cat-bills: #c9b48a;
+  --cat-transport: #5fb3a8;
+  --cat-other: #8c8780;
+
+  /* Spacing */
+  --s-4: 4px;
+  --s-8: 8px;
+  --s-12: 12px;
+  --s-16: 16px;
+  --s-20: 20px;
+  --s-24: 24px;
+  --s-32: 32px;
+  --s-40: 40px;
+  --margin: 20px;
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-card: 20px;
+  --r-pill: 999px;
+
+  /* Sizes */
+  --tap: 44px;
+  --phone-w: 390px;
+  --phone-h: 844px;
+  --dock-h: 64px;
+
+  --font: var(--font-schibsted), system-ui, -apple-system, sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Type scale. Sizes below 12px are raised to 12 (rule: text ≥ 12px). */
+.t-figure   { font-size: 32px; line-height: 36px; font-weight: 600; }
+.t-title-24 { font-size: 24px; line-height: 28px; font-weight: 600; }
+.t-title-20 { font-size: 20px; line-height: 26px; font-weight: 600; }
+.t-value-24 { font-size: 24px; line-height: 30px; font-weight: 500; }
+.t-value-20 { font-size: 20px; line-height: 28px; font-weight: 500; }
+.t-value-16 { font-size: 16px; line-height: 24px; font-weight: 500; }
+.t-heading  { font-size: 16px; line-height: 22px; font-weight: 600; }
+.t-body-16  { font-size: 16px; line-height: 24px; font-weight: 400; }
+.t-body-15  { font-size: 15px; line-height: 22px; font-weight: 400; }
+.t-body-14  { font-size: 14px; line-height: 20px; font-weight: 400; }
+.t-body-15m { font-size: 15px; line-height: 20px; font-weight: 500; }
+.t-body-14m { font-size: 14px; line-height: 20px; font-weight: 500; }
+.t-label    { font-size: 14px; line-height: 20px; font-weight: 600; }
+.t-meta-13  { font-size: 13px; line-height: 18px; font-weight: 400; }
+.t-meta-12  { font-size: 12px; line-height: 16px; font-weight: 400; }
+.t-tab      { font-size: 12px; line-height: 14px; font-weight: 500; } /* Figma 11/14, raised to 12 */
+
+.t-figure, .t-value-24, .t-value-20, .t-value-16 { font-variant-numeric: tabular-nums; }
+
+.c-muted { color: var(--muted); }
+.c-faint { color: var(--faint); }
+.c-copper { color: var(--copper); }
+.c-positive { color: var(--positive); }
+.c-negative { color: var(--negative); }

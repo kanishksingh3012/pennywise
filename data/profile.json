@@ -1,0 +1,22 @@
+{
+  "name": "Amit",
+  "age": 24,
+  "city": "Bengaluru",
+  "take_home": 85000,
+  "today": "2026-10-22",
+  "payday": "2026-10-31",
+  "payday_rule": "last day of month",
+  "safe_to_spend": {
+    "per_day": 1040,
+    "days_to_payday": 9
+  },
+  "savings_rate": {
+    "now": 0.13,
+    "usual": 0.21
+  },
+  "buffer_months": 2.1,
+  "sip": {
+    "amount": 5000,
+    "day": 5
+  }
+}

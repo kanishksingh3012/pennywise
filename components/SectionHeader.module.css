@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--tap);
+  margin-top: var(--s-24);
+  margin-bottom: var(--s-4);
+}
+.action { min-height: var(--tap); padding: 0 0 0 var(--s-16); }
+.action:active { color: var(--text); }

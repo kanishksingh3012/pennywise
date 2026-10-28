@@ -1,0 +1,26 @@
+.chip {
+  position: relative;
+  flex-shrink: 0;
+  height: 36px;
+  margin: 4px 0;
+  padding: 0 var(--s-16);
+  border-radius: var(--r-pill);
+  background: var(--raised);
+  border: 1px solid var(--rule);
+  color: var(--text);
+  white-space: nowrap;
+  transition: background 120ms, border-color 120ms, color 120ms;
+}
+.chip::after { content: ""; position: absolute; inset: -5px 0; } /* 44px hit area */
+.chip:active { background: var(--rule); }
+.selected { background: var(--copper-tint); border-color: var(--copper); color: var(--copper); }
+
+.row {
+  display: flex;
+  gap: var(--s-8);
+  overflow-x: auto;
+  margin: 0 calc(var(--margin) * -1);
+  padding: 0 var(--margin);
+  scrollbar-width: none;
+}
+.row::-webkit-scrollbar { display: none; }

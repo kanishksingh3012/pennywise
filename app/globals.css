@@ -1,0 +1,47 @@
+@import "./tokens.css";
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  background: var(--ground);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+}
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, p { margin: 0; }
+:focus-visible { outline: 2px solid var(--copper); outline-offset: 2px; }
+
+/* Phone frame: full screen on phones, a centred 390×844 frame on desktop. */
+.stage { min-height: 100dvh; display: flex; justify-content: center; }
+.phone {
+  position: relative;
+  width: 100%;
+  max-width: var(--phone-w);
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--ground);
+}
+.screen {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 var(--margin) calc(var(--dock-h) + 48px);
+  scrollbar-width: none;
+}
+.screen::-webkit-scrollbar { display: none; }
+#overlay-root { position: absolute; inset: 0; pointer-events: none; z-index: 50; }
+#overlay-root > * { pointer-events: auto; }
+
+@media (min-width: 600px) {
+  .stage { align-items: center; padding: 24px; background: #070606; }
+  .phone {
+    height: min(var(--phone-h), calc(100dvh - 48px));
+    border-radius: 44px;
+    border: 1px solid var(--rule);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  }
+}

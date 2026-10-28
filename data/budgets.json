@@ -1,0 +1,32 @@
+{
+  "month": "2026-10",
+  "categories": [
+    {
+      "category": "Food",
+      "limit": 10000
+    },
+    {
+      "category": "Shopping",
+      "limit": 10000
+    },
+    {
+      "category": "Transport",
+      "limit": 6000
+    },
+    {
+      "category": "Bills",
+      "limit": 5500,
+      "fixed": true
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-12",
+      "category": "Food",
+      "from": 9000,
+      "to": 10000,
+      "reason": "Friend's birthday dinner"
+    }
+  ],
+  "caps": []
+}

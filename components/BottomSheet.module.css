@@ -1,0 +1,43 @@
+.wrap { position: absolute; inset: 0; z-index: 10; }
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 280ms var(--ease-out);
+}
+.sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-top: 1px solid var(--rule);
+  border-radius: 28px 28px 0 0;
+  transition: transform 300ms var(--ease-out);
+  will-change: transform;
+}
+.dragging { transition: none; }
+.grab {
+  flex-shrink: 0;
+  padding: var(--s-8) var(--margin) var(--s-12);
+  touch-action: none;
+  cursor: grab;
+}
+.dragging .grab { cursor: grabbing; }
+.handle {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin: 0 auto var(--s-16);
+  border-radius: var(--r-pill);
+  background: var(--chart-grey);
+}
+.title { min-height: var(--s-24); }
+.body {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 var(--margin) calc(var(--s-32) + env(safe-area-inset-bottom));
+}

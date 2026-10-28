@@ -1,0 +1,47 @@
+.dock {
+  position: absolute;
+  left: var(--margin);
+  right: var(--margin);
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: var(--s-12);
+}
+.tabs {
+  flex: 1;
+  display: flex;
+  height: var(--dock-h);
+  padding: 0 var(--s-4);
+  border-radius: var(--r-pill);
+  background: rgba(37, 35, 33, 0.82);
+  border: 1px solid var(--rule);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+}
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: var(--tap);
+  color: var(--faint);
+  transition: color 120ms;
+}
+.active { color: var(--text); }
+.penny {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: var(--dock-h);
+  height: var(--dock-h);
+  border-radius: 50%;
+  color: var(--copper);
+  background: var(--copper-tint);
+  border: 1px solid color-mix(in srgb, var(--copper) 45%, transparent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 160ms var(--ease-out);
+}
+.penny:active { transform: scale(0.94); }

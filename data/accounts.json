@@ -1,0 +1,37 @@
+[
+  {
+    "id": "hdfc_sav",
+    "name": "HDFC Savings",
+    "type": "savings",
+    "balance": 24800,
+    "masked": "XX4821"
+  },
+  {
+    "id": "sbi_sav",
+    "name": "SBI Savings",
+    "type": "savings",
+    "balance": 6400,
+    "masked": "XX1307"
+  },
+  {
+    "id": "cash",
+    "name": "Cash",
+    "type": "cash",
+    "balance": 1400,
+    "last_atm": {
+      "date": "2026-10-18",
+      "amount": 2000
+    },
+    "unlogged": 520
+  },
+  {
+    "id": "hdfc_card",
+    "name": "HDFC Millennia",
+    "type": "credit_card",
+    "balance": 5482,
+    "due": 5482,
+    "due_date": "2026-10-28",
+    "limit": 30000,
+    "masked": "XX9034"
+  }
+]
